@@ -3,6 +3,12 @@ $(document).on('pageshow', '#search_near_twokm', function(){
 alert('Doctors around 2km');
 twokm =  JSON.parse(sessionStorage.getItem("twokm")); 
 
+  $(document).off('click', '#doctaroundtopageone').on('click', '#doctaroundtopageone', function() {
+    sessionStorage.clear();
+ $.mobile.changePage($('#pageone'), { transition: "none", changeHash: true, reverse: false });
+ return false;
+  });
+
 $('#cadd').empty();
 
 for(a=0;a<twokm.length;a++){

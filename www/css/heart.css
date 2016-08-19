@@ -128,6 +128,17 @@
 }
 .age_n_style_mob{
         width: 700px!important;
+}
+
+.emr-nonemer{
+    margin-left: 15% !important;
+    margin-right: 15% !important;
+}
+.search_near_by_buttt{
+        background-color: #B73030 !important;
+    color: white !important;
+    font-size: 20px !important;
+    font-weight: 800 !important;
 }   
 
 }
@@ -190,6 +201,7 @@
     color: white;
      border-radius: 20px;
     background-color: #3D494C;
+        border: 5px solid #15B2DA;
 }
 
 #myPopup1da{
@@ -205,6 +217,7 @@
     color: white;
      border-radius: 20px;
     background-color: #3D494C;
+        border: 5px solid #15B2DA;
 }
 .popsi{
     font-size:23px !important; 
@@ -214,5 +227,15 @@
 }
 .age_n_style_mob{
         width: 700px!important;
+}
+.emr-nonemer{
+    margin-left: 15% !important;
+    margin-right: 15% !important;
+}
+.search_near_by_buttt{
+        background-color: #B73030 !important;
+    color: white !important;
+    font-size: 20px !important;
+    font-weight: 800 !important;
 }
 }

@@ -75,10 +75,10 @@ function onBackKeyDown() {
 				<div class="main-center"> <img src="./img/logo.PNG"></div>
                 <div class="main-both2">&nbsp;</div>
 
-				<a href="" class="ui-btn ui-btn-raised" id="emergency">Emergency</a>
+				<a href="" class="ui-btn ui-btn-raised emr-nonemer" id="emergency">Emergency</a>
 				
 				 <div class="main-both3">&nbsp;</div>
-				<a href="#" class="ui-btn ui-btn-raised">Non -Emergency</a>
+				<a href="#" class="ui-btn ui-btn-raised emr-nonemer">Non -Emergency</a>
 			</div>
 
 		</div>
@@ -242,10 +242,12 @@ function onBackKeyDown() {
 <!--   <a href="#myPopup1d" data-rel="popup" class="ui-btn ui-btn-inline ui-corner-all" data-position-to="window">Position popup to window</a> -->
 
      <div data-role="popup" id="myPopup1d" class="ui-content" data-dismissible="false" >
-      <p class="popsi">Details Submitted Successfully</p>
+      <p class="popsi">Thanks For The Information</p>
 <!--       <a href="#question_li" class="txt-dec">  <input type="button" value="ok" style="opacity: inherit; border-radius: 0px;background-color:white" id=""> dsfdas</a> -->
-     <a href="#" > <button style="border: solid 2px #00BBD3;opacity: inherit; border-radius: 0px;background-color:#00A3B5;color:white;font-size:larger" id="oktoquestio">OK</button></a>
-
+    <!--  <a href="#" > <button style="border: solid 2px #00BBD3;opacity: inherit; border-radius: 0px;background-color:#00A3B5;color:white;font-size:larger" id="oktoquestio">OK</button></a> -->
+<div style="float:center;margin-left:25%;margin-right:25%">
+<a href="#" class="txt-dec" id="oktoquestio" > <button class="search_near_by_buttt">OK</button></a>
+</div> 
     </div>
 <!--     <div >
 	<input type="text" name="mob_no" id="mob_no" value="" data-clear-btn="true" placeholder="Enter Your Mobile Number...">
@@ -253,10 +255,12 @@ function onBackKeyDown() {
 
      <br>
 
-<div style="float:center;margin-left:25%;margin-right:25%">
+<!-- <div style="float:center;margin-left:25%;margin-right:25%">
 	  <a href="#" class="txt-dec">  <input type="button" value="Submit" style="border: solid 2px #00BBD3;opacity: inherit; border-radius: 0px;" id="pate_enter_but"> </a>
-</div>
- 
+</div> -->
+<div style="float:center;margin-left:25%;margin-right:25%">
+<a href="#" class="txt-dec" id="pate_enter_but" > <button class="search_near_by_buttt">Submit</button></a>
+</div> 
 <!-- 
     <button style="border: solid 2px #00BBD3;opacity: inherit; border-radius: 0px;background-color:#00A3B5;color:white;font-size:larger" id="pate_enter_but">submit</button> -->
 <br>
@@ -614,7 +618,7 @@ margin-top: -1em;
   
 
   <fieldset data-role="controlgroup" class="field">
-                            <legend class="fnt1 leg">Relieved with Isordil tablet or NTG spray?</legend>
+                            <legend class="fnt1 leg">Did you have Isordil tablet or NTG spray?</legend>
                            <div  class="fnt2" id="" ></div>
                        
                             <input type="radio" name="painstrtt4" id="radio-choice-1t" value="55" >
@@ -656,11 +660,11 @@ margin-top: -1em;
   </fieldset>
 </div>
 <br>
-<div class="row rw" style="background-color: #009688 !important;" >
+<!-- <div class="row rw" style="background-color: #009688 !important;" >
   
 
   <fieldset data-role="controlgroup" class="field">
-                            <legend class="fnt1 leg">Have you had chest pain?</legend>
+                            <legend class="fnt1 leg">Have you had chest pain in the past?</legend>
                            <div  class="fnt2" id="" ></div>
                        
                             <input type="radio" name="painstrtt6" id="radio-choice-1tUSA" value="60" >
@@ -680,7 +684,7 @@ margin-top: -1em;
                            
   </fieldset>
 </div>
-<br>
+<br> -->
 <div class="row rw" style="background-color: #009688 !important;" >
   
 
@@ -769,7 +773,31 @@ margin-top: -1em;
   </fieldset>
 </div>
 <br>
+<div class="row rw" style="background-color: #009688 !important;" >
+  
 
+  <fieldset data-role="controlgroup" class="field">
+                            <legend class="fnt1 leg">Have you had chest pain in the past?</legend>
+                           <div  class="fnt2" id="" ></div>
+                       
+                            <input type="radio" name="painstrtt6" id="radio-choice-1tUSA" value="60" >
+
+                            <label  for="radio-choice-1tUSA" class="waves-effect lab">Yes, At rest sitting / lying down </label>
+
+                            <input type="radio" name="painstrtt6" id="radio-choice-12tUOA" value="61">
+
+                            <label  for="radio-choice-12tUOA" class="waves-effect lab">On exertion walking up slope / climbing stairs</label>
+
+                             <input type="radio" name="painstrtt6" id="radio-choice-12tUYA" value="62" checked="checked">
+
+                            <label  for="radio-choice-12tUYA" class="waves-effect lab">NO</label>
+                         
+
+                        
+                           
+  </fieldset>
+</div>
+<br>
 
  <div class="row rw" >
  
@@ -836,18 +864,18 @@ margin-top: -1em;
 <br>
 </div>
 
-<div class="row">
+<!-- <div class="row">
 <div class="col-xs-3 padz"></div>
  <div class="col-xs-6 padz">
-   
-   <!-- <button style="border: solid 2px #00BBD3;opacity: inherit; border-radius: 0px;background-color:#00A3B5;color:white;font-size:larger" id="chatSendBut_qu">submit</button> -->
 <a href="" class="txt-dec">  <input type="button" value="Submit" style="border: solid 2px #00BBD3;opacity: inherit; border-radius: 0px;" id="chatSendBut_qu"> </a>
  </div>
-
 <div class="col-xs-3 padz"></div>
+</div> -->
 
-
+<div style="float:center;margin-left:25%;margin-right:25%">
+<a href="#" class="txt-dec" id="chatSendBut_qu" > <button class="search_near_by_buttt">Submit</button></a>
 </div>
+
 </form>
 <br>
 <!--   <a href="#myPopup1d" data-rel="popup" class="ui-btn ui-btn-inline ui-corner-all" data-position-to="window">Position popup to window</a> -->
@@ -855,7 +883,13 @@ margin-top: -1em;
      <div data-role="popup" id="myPopup1da" class="ui-content" data-dismissible="false" >
       <p class="popsi">Report Submitted Succesfully</p>
      <!--  <a href="#sear_nearby_mapp" class="txt-dec">  <input type="button" value="ok" style="opacity: inherit; border-radius: 0px;" id=""> </a> -->
-      <a href="#" > <button style="border: solid 2px #00BBD3;opacity: inherit; border-radius: 0px;background-color:#00A3B5;color:white;font-size:larger" id="tosear_nearby_mapp">OK</button></a>
+
+    <!--   <a href="#" > <button style="border: solid 2px #00BBD3;opacity: inherit; border-radius: 0px;background-color:#00A3B5;color:white;font-size:larger" id="tosear_nearby_mapp">OK</button></a> -->
+
+      <div style="float:center;margin-left:25%;margin-right:25%">
+<a href="#" class="txt-dec" id="tosear_nearby_mapp" > <button class="search_near_by_buttt">OK</button></a>
+</div> 
+
     </div>
 
 <div data-role="popup" id="positionWindow" class="ui-content" style="max-width:380px;background-color:#007A88;color:white;padding:50px;border-radius:10px;font-weight:500">
@@ -901,7 +935,7 @@ margin-top: -1em;
 	    <div data-role="header" data-position="fixed" class="wow fadeInDown" data-wow-delay="0.2s">
         <a href="#bottomsheet" class="ui-btn ui-btn-right wow fadeIn" data-wow-delay='1.2s'><i class="zmdi zmdi-more-vert"></i></a>
         <!-- <a href="#leftpanel" class="ui-btn ui-btn-left wow fadeIn" data-wow-delay='0.8s'><i class="zmdi zmdi-menu"></i></a> -->
-          <a href="#" class="ui-btn ui-btn-left wow fadeIn" data-wow-delay='0.8s'><i class="zmdi  zmdi-arrow-back" id="homebacfromupload"></i></a>
+          <a href="#question_li" class="ui-btn ui-btn-left wow fadeIn" data-wow-delay='0.8s'><i class="zmdi  zmdi-arrow-back" id=""></i></a>
         <h1 class="wow fadeIn" data-wow-delay='0.4s'>My Heart</h1>
       </div>
 
@@ -916,7 +950,7 @@ margin-top: -1em;
 </div>
 
  <div class="row " style="margin-left:5px;margin-right:5px">
- <label  for="textarea2b" class="fnt1 lega rwa" >Load ECG</label>
+ <label  for="textarea2b" class="fnt1 lega rwa" >Load any reports,If you have</label>
  </div>
 
   <div class="upload_box">
@@ -934,11 +968,14 @@ margin-top: -1em;
 <!--upload end-->
 
 
-<div style="margin-top:50px;margin-left:20%;margin-right:20% ">
-<!-- <a href="" class="txt-dec">  <input type="button" value="SEARCH NEARBY LOCATION" style="border: solid 2px #00BBD3;opacity: inherit; border-radius: 0px;" id="sear_Addre" > </a> -->
-<a href="#search_near_twokm" class="txt-dec" id="" >  <input type="button" value="SEARCH NEARBY LOCATION" style="border: solid 2px #00BBD3;opacity: inherit; border-radius: 0px;" > </a>
-</div>
+<!-- <div style="margin-top:50px;margin-left:20%;margin-right:20% ">
+<a href="" class="txt-dec">  <input type="button" value="SEARCH NEARBY LOCATION" style="border: solid 2px #00BBD3;opacity: inherit; border-radius: 0px;" id="sear_Addre" > </a>
+<a href="#search_near_twokm" class="txt-dec" id="" >  <input type="button" value="SEARCH NEARBY LOCATION" style="border: solid 2px #00BBD3;opacity: inherit; border-radius: 0px;color:red !important" > </a>
+</div> -->
 
+<div style="float:center;margin-left:25%;margin-right:25%">
+<a href="#search_near_twokm" class="txt-dec" id="" > <button class="search_near_by_buttt">Submit</button></a>
+</div>
 </div>
 </div>
 <!--map test end-->
@@ -957,7 +994,7 @@ margin-top: -1em;
 
 			 <div data-role="header" data-position="fixed" class="wow fadeInDown" data-wow-delay="0.2s">
 				<a href="#bottomsheet" class="ui-btn ui-btn-right wow fadeIn" data-wow-delay='1.2s'><i class="zmdi zmdi-more-vert"></i></a>
-				<a href="#pageone" class="ui-btn ui-btn-left wow fadeIn" data-wow-delay='0.8s'><i class="zmdi zmdi-arrow-back"></i></a>
+				<a href="#" class="ui-btn ui-btn-left wow fadeIn" data-wow-delay='0.8s' id="doctaroundtopageone"><i class="zmdi zmdi-arrow-back"></i></a>
 				<h1 class="wow fadeIn" data-wow-delay='0.4s'>My Heart</h1>
 			</div>
 
