@@ -9,11 +9,6 @@ if(condition_emer == null){
  return false;
 }
 
-  $(document).off('click', '#ypageion').on('click', '#ypageion', function() {
- $.mobile.changePage($('#pageone'), { transition: "none", changeHash: true, reverse: false });
- return false;
-  });
-
   $(document).off('click', '#oktoquestio').on('click', '#oktoquestio', function() {
  $.mobile.changePage($('#question_li'), { transition: "none", changeHash: true, reverse: false });
  return false;
