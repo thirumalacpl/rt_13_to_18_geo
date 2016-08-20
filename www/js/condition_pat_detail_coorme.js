@@ -12,6 +12,11 @@ if(condition_emer == null){
  return false;
 }
 
+  $(document).off('click', '#ypageion').on('click', '#ypageion', function() {
+ $.mobile.changePage($('#pageone'), { transition: "none", changeHash: true, reverse: false });
+ return false;
+  });
+  
   $(document).off('click', '#oktoquestio').on('click', '#oktoquestio', function() {
  $.mobile.changePage($('#question_li'), { transition: "none", changeHash: true, reverse: false });
  return false;
@@ -22,6 +27,8 @@ if(condition_emer == null){
 
  var pat_name = document.getElementById('pat_name').value;
  var age_nn = document.getElementById('age_n').value;
+ var age_cm_h = document.getElementById('age_cm_h').value;
+ var age_kg_w = document.getElementById('age_kg_w').value;
  var gender_d = $('input:radio[name=gender_de]:checked').val();
   var mob_no = document.getElementById('mob_no').value;
 
@@ -47,7 +54,7 @@ var formData = $("#callAjaxForm").serialize();
 
   $.ajax({
   type: "POST",
-  url: "http://staging.eimpressive.com/slim/slim-heart-mergedb/pat_detai_inser.php?pat_name="+pat_name+"&age_nn="+age_nn+"&gender_d="+gender_d+"&mob_no="+mob_no+"&condition_emer="+condition_emer,
+  url: "http://staging.eimpressive.com/slim/slim-heart-mergedb/pat_detai_inser.php?pat_name="+pat_name+"&age_nn="+age_nn+"&gender_d="+gender_d+"&mob_no="+mob_no+"&condition_emer="+condition_emer+"&age_cm_h="+age_cm_h+"&age_kg_w="+age_kg_w,
   data: formData,
   success: onSuccessfg,
   async: 'true',

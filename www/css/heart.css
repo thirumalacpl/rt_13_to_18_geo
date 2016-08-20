@@ -114,6 +114,7 @@
     background-color: #3D494C;
     color: white;
     border-radius: 20px;
+       border: 5px solid #15B2DA;
 }
 
 #myPopup1da{
@@ -122,6 +123,7 @@
     border-radius: 20px;
     /*    background-color: #185B6C;
     color: white;*/
+       border: 5px solid #15B2DA;
 }
 .age_n_style{
         width: 700px!important;
